@@ -1,0 +1,847 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    font-size: 18px;
+    font-family: sans-serif;
+    line-height: 1.60em;
+}
+
+html,body{
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #000;
+    margin: 0 0 20px;
+}
+
+p {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 75px;
+    color: #fff;
+}
+
+h2 {
+    font-size: 22px;
+    line-height: 1.5em;
+    color: #fff;
+}
+
+h3 {
+    font-size: 49px;
+    color: #000;
+}
+
+h4 {
+    font-size: 40px;
+}
+
+a {
+    text-transform: capitalize;
+    text-decoration: none;
+    background-color: #0f0d19;
+    color: #fff;
+    font-weight: 600;
+    transition: all .4s ease-in-out;
+}
+
+.banner {
+    padding: 0 0 100px;
+}
+
+.bg-img {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+}
+
+.navbar-brand {
+    background-color: transparent;
+}
+
+.navbar-brand:hover {
+    background-color: transparent;
+}
+
+.navbar-brand img {
+    width: 135px;
+    height: 43px;
+}
+
+.nav-link.active,
+.nav-link {
+    color: #fff;
+}
+
+.nav-item.active:hover{
+    color:#5546e2;
+}
+
+.nav-button{
+    font-size: 15px;
+    text-transform: none;
+    background-color: #5555d4;
+    padding: 4px 18px;
+    display: inline-block;
+    margin-bottom: 23px;
+    border-radius: 10px;
+}
+
+.nav-button:hover {
+    background-color: #311dea;
+}
+
+.nav-button i {
+    padding-right: 7px;
+}
+
+.navbar-expand-lg .navbar-nav {
+    padding: 0 36px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    padding: 22px 0 0 73px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item {
+    padding: 0 0 0 30px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 0;
+    color: #fff;
+    transition: all .4s ease-in-out;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: #311dea;
+}
+
+.luxury {
+    text-align: center;
+    padding: 222px 188px;
+}
+
+.luxury a,
+.explore-btn a,
+.see-btn a {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.luxury a:hover,
+.explore-btn a:hover {
+    background-color: #3c3b41;
+}
+
+.section-tribute {
+    text-align: center;
+    padding: 0 87px;
+}
+
+.section-tribute p,
+.our-resort-inner p {
+    color: #7d7789;
+    line-height: 1.6em;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px -15px;
+}
+
+i {
+    padding-right: 5px;
+}
+
+.icon-one i {
+    color: #f7c32e;
+}
+
+.icon-two i {
+    color: #5143d9;
+}
+
+.icon-three i {
+    color: #d41212;
+}
+
+.icon-four i {
+    color: rgb(40, 131, 40);
+}
+
+.icon-one h2,
+.icon-two h2,
+.icon-three h2,
+.icon-four h2 {
+    color: #000;
+    font-weight: 500;
+}
+
+.ratings-row {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 7px 0 0;
+}
+
+.room-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rating {
+    padding: 0 10px;
+}
+
+.ratings-icon {
+    padding-right: 18px;
+}
+
+.ratings-icon i,
+.happy-moments-icon i {
+    color: #f7c32e;
+    padding: 0;
+    font-size: 16px;
+}
+
+.ratings-icon p {
+    font-size: 14px;
+    line-height: 1.2em;
+}
+
+.slider-wrap {
+    padding: 15px 15px;
+}
+
+img {
+    width: 100%;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.exciting-exp-slider-item {
+    padding: 0 15px;
+    height: auto;
+}
+
+.exciting-exp-slider-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: all .4s ease-in-out;
+}
+
+.js-exciting-exp-slider .slick-list {
+    margin: 0 -15px;
+}
+
+.exciting-exp-link {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.exciting-exp-slider-overlay {
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgb(0, 0, 0)));
+    background-image: linear-gradient(180deg, transparent, rgb(0, 0, 0));
+    min-height: 386px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px 15px;
+}
+
+.exciting-exp-slider-overlay-wrap {
+    transition: all .4s ease-in-out;
+}
+
+.exciting-exp-link:hover .exciting-exp-slider-overlay-wrap {
+    transform: translateY(-10px);
+}
+
+/* .exciting-exp-link:hover .exciting-exp-slider-bg {
+    transform: scale(1.3);
+} */
+
+.exciting-exp-button svg {
+    width: 20px;
+    height: auto;
+}
+
+.js-exciting-exp-slider .slick-track {
+    display: flex;
+}
+
+.slide {
+    margin: 30px 0 0 0;
+}
+
+.slide .slick-arrow, 
+.js-exciting-exp-slider .slick-arrow, 
+.happy-slide .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    font-size: 0;
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    padding: 0px;
+    transition: all 0.3s ease-in-out;
+}
+
+.slide .slick-arrow:hover{
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+.slide .slick-prev,
+.js-exciting-exp-slider .slick-prev,
+.happy-slide .slick-prev {
+    left: 20px;
+    background-image: url(../images/left-arrow.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+}
+
+.slide .slick-next,
+.js-exciting-exp-slider .slick-next,
+.happy-slide .slick-next {
+    right: 20px;
+    background-image: url(../images/right-arrow.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+}
+
+.offers-month-heading,
+.happy-moments-heading {
+    text-align: center;
+}
+
+.happy-moments-wrap {
+    margin: 30px 0 0;
+}
+
+.happy-moments-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: end;
+}
+
+.happy-moments-img {
+    padding: 0 15px 0 0;
+}
+
+.happy-imgs {
+    position: relative;
+    padding: 0 0 0 15px;
+}
+
+.offers-month-heading h3 {
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+.offers-month-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.offers-month-img {
+    width: 20%;
+    padding: 0 10px;
+}
+
+.offers-month-img p {
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 600;
+    padding: 6px;
+    transition: all .4s ease-in-out;
+}
+
+.offers-month-img p:hover {
+    color: #5143d9;
+}
+
+.happy-moments-inner {
+    width: 412px;
+    height: 246px;
+    padding: 47px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 26px;
+    left: 26px;
+}
+
+.happy-moments-dblqutation {
+    width: 50px;
+    height: 50px;
+    background-color: #5143d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -24px;
+    left: 39px;
+}
+
+.happy-moments-dblqutation i {
+    color: #fff;
+    font-size: 13px;
+    padding: 0;
+}
+
+.happy-moments-para p {
+    font-size: 17px;
+    line-height: 1.3em;
+    margin: 0 0 15px;
+    font-weight: 600;
+}
+
+.happy-moments-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.happy-moments-image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.happy-moments-image p {
+    text-transform: capitalize;
+    margin: 0;
+    padding-left: 10px;
+    font-weight: 500;
+}
+
+.our-resort-inner {
+    padding: 0 15px;
+    margin: 42px 0 0;
+}
+
+.our-resort-inner h3 {
+    margin: 0 0 8px 0;
+    font-size: 32px;
+}
+
+.our-resort-icon-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 10px;
+}
+
+.our-resort-icon-inner,
+.our-resort-icon-inner-one,
+.our-resort-icon-inner-two,
+.our-resort-icon-inner-three {
+    width: 55px;
+    height: 55px;
+    background-color: #dbdde9;
+    margin: 0 20px 0 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-resort-icon-inner i,
+.our-resort-icon-inner-one i,
+.our-resort-icon-inner-two i{
+    color: #5959cd;
+    font-size: 22px;
+    padding: 0;
+}
+
+.our-resort-icon-inner-two i {
+    color:#f7c32e;
+    font-size: 22px;
+}
+
+.our-resort-icon-inner-two {
+    background-color: #f5f5db;
+}
+
+.our-resort-icon-inner-three i {
+    color: #c53838;
+    font-size: 22px;
+    padding-left: 6px;
+}
+
+.our-resort-icon-inner-three {
+    background-color: #feeded;
+}
+
+.subscribe-spcl-discount {
+    position: relative;
+    text-align: center;
+    line-height: 1.5em;
+    padding: 60px 223px 50px;
+    border-radius: 20px;
+    background-color: #f5f5f6;
+    overflow: hidden;
+}
+
+.subscribe-spcl-discount h2 {
+    font-size: 49px;
+    color: #000;
+    margin: 0 0 27px;
+    line-height: 1.3em;
+}
+
+.subscribe-spcl-discount p {
+    font-size: 16px;
+    color: #7d7789;
+}
+
+.island-img {
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+}
+
+.dots-img {
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.email-box {
+    position: relative;
+    width: 100%;
+}
+
+.email-box input {
+    width: 100%;
+    height: 56px;
+    border-radius: 7px;
+    border: none;
+    outline: 0;
+    background-color: #ffffff;
+    padding: 0 50px 0 23px;
+    font-size: 15px;
+    color: #ddd7d7;
+}
+
+.email-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: 0;
+    color: #fff;
+    background-color: #6c6565;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.free-booking {
+    margin:0 0 5px 0;
+}
+
+.free-booking h5 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #0b0a12;
+}
+
+.footer-inner {
+    text-align: center;
+    padding: 55px 291px;
+}
+
+.footer-block img {
+    width: 190px;
+    padding: 0 0 13px;
+}
+
+.footer-block p {
+    color: #c5c5c7;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.footer-menu ul {
+    display:flex;
+    justify-content: center;
+}
+
+.footer-menu li {
+    text-transform: capitalize;
+    padding: 0 29px 0 0;
+    list-style: none;
+}
+
+.footer-menu li a {
+    color: #d9d9e3;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all .4s ease-in-out;
+}
+
+.footer-menu li a:hover {
+    color:#b2a9fd;
+}
+
+.footer-icon ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icon li {
+    padding: 0 16px 0 0;
+    list-style: none;
+}
+
+.footer-icon li a,
+.footer-icon-one a {
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    color: #5d82d1;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icon p,
+.footer-icon p a {
+    color: #c5c5c7;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+}
+
+.footer-icon p a:hover {
+    color: #5143d9;
+}
+
+.footer-icon ul li a:hover{
+    background-color: #dad1e5e7;
+    border: 1px solid #fff;
+}
+
+.footer-icon-one i {
+    color: #f0338b;
+}
+
+.footer-icon-two i {
+    color: #1bb3f0;
+}
+
+.footer-icon-three i {
+    color: #00a2ff;
+}
+    
+.footer-icon li a i {
+    padding: 0;
+    font-size: 16px;
+}
+
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+} 
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+
+    h1 {
+        font-size: 56px;
+    }
+
+    .luxury {
+        padding: 176px 53px;
+    }
+
+    .banner {
+        padding: 0 0 65px;
+    }
+
+    .section-tribute {
+        padding: 0;
+    }
+
+    .offers-month-heading h3 {
+        font-size: 41px;
+        padding-bottom: 30px;
+    }
+
+    .offers-month-img {
+        width: 50%;
+    }
+
+    .happy-moments-heading h3 {
+        font-size: 43px;
+    }
+
+    .happy-moments-img img {
+        margin-bottom: 15px;
+    }
+
+    .happy-moments-inner {
+        height: 186px;
+        padding: 23px 30px;
+        bottom: 104px;
+        left: 132px;
+    }
+
+    .happy-imgs {
+        padding: 0;
+    }
+
+    .our-resort-inner {
+        padding: 0;
+    }
+
+    .our-resort-icon-inner,
+    .our-resort-icon-inner-two,
+    .our-resort-icon-inner-three {
+        width: 30px;
+        height: 30px;
+    }
+
+    .our-resort-icon-inner i,
+    .our-resort-icon-inner-two i,
+    .our-resort-icon-inner-three i {
+        font-size: 17px;
+    }
+
+    .free-booking h5 {
+        padding-bottom: 2px;
+    }
+
+    .subscribe-spcl-discount {
+        padding: 60px 141px 50px;
+    }
+
+    .subscribe-spcl-discount h2 {
+        font-size: 35px;
+    }
+
+    .footer-inner {
+        padding: 20px 0 20px 0;
+    }
+} 
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .banner {
+        padding: 0 0 50px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .luxury {
+        padding: 152px 0;
+    }
+
+    .section-tribute h3 {
+        font-size: 37px;
+        margin-bottom: 10px;
+    }
+
+    .section-tribute p {
+        margin-bottom: 30px;
+    }
+
+    .slider-one h3 {
+        font-size: 42px;
+    }
+
+    .happy-moments-inner {
+        bottom: 29px;
+        left: 23px;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .offers-month-img {
+        width: 100%;
+    }
+
+    .subscribe-spcl-discount {
+        padding: 60px 30px 50px;
+    }
+}
